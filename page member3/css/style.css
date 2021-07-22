@@ -380,7 +380,7 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 991px) {
   .header-area {
     padding: 0px 15px;
     height: 80px;
@@ -485,7 +485,6 @@ footer {
 
 div.boxattack {
   background: rgba(255, 255, 255,0.1);
-	margin-top:100px;
   margin-left: 5px;
   width: 100%;
   border-radius: 25px;
@@ -696,6 +695,8 @@ div.boxattack p {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 14px 36px;
+    margin-top: 42px;
+    margin-right: 16px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
