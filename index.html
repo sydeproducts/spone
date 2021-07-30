@@ -19,10 +19,60 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+	<style>
+	
+	.unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+	  </style>
 
     </head>
     
-    <body>
+    <body div class="unselectable">
+
+	  <script language=JavaScript>
+
+
+//Disable right mouse click Script
+//By Geek Site.in
+
+
+var message="Disabled Right Click!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+
 		
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
@@ -47,6 +97,14 @@
                                 </ul>
 							</li>
                             <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li>
+							<div id="google_translate_element"></div>
+							<script type="text/javascript">
+							function googleTranslateElementInit() {
+							  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+							}
+							</script>
+
+							<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 						</ul>
                     </nav>
                 </div>
@@ -67,7 +125,7 @@
 						<div class="text-center">
 							<font color="#FFFFF">
 								<h2>Update of SP-One Attack :
-									<br> <h4>At This Day 30 July 2021</h4>
+									<br> <h4>At This Day 29 July 2021</h4>
 								</h2>
 							</font>
 						</div>
