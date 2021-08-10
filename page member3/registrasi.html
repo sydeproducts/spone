@@ -355,12 +355,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  <li><input type="submit" value="Send Message" class="button primary"></li>
 		  </ul>
 		  
-		  <!---
-		  <div class="btn-block">
-			
-          <button type="submit" href="/">Submit</button>
-        </div>
-			--->
+		   <script>
+			  document.querySelector("form").addEventListener("submit", handleSubmit);
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('pizzaOrder');
+  let formData = new FormData(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
+		  </script>
+ 
+		  
       </form>
     </div>
   </div>
