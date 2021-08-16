@@ -734,12 +734,39 @@ div.boxattack h6 {
   opacity: 1.0;
 }
 
+div.boxattack2 {
+  background: rgba(255, 255, 255,0.1);
+  margin-left: 10px;
+  width: 33%;
+  border-radius: 25px;
+  padding: 20px;
+  padding-left: 10px;
+	padding-bottom: 20px;
+  text-align: center;
+
+}
+div.boxattack2 h2 {
+  margin: 5%;
+	font-display: auto;
+  color: #ffffff;
+  opacity: 1.0;
+}
+div.boxattack2 h6 {
+  margin: 5%;
+	font-display: auto;
+  color: #F89E09;
+  opacity: 1.0;
+}
 /* 
 ---------------------------------------------
 welcome
 --------------------------------------------- 
 */
 #welcome {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(2, 100px);
   overflow: hidden;
   position: relative;
   display: flex;
