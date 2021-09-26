@@ -276,7 +276,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="text-center">
 			   <font color="#FFFFF">
 				<h2>Update of SP-One Attack :
-				   <br> <h4>At This Day 25 September 2021</h4>
+				   <font color="#FFFFFF"><h3>At This Day  <h3 id="p1"></h3></h3></font>
+				   
+				   <script>
+						var today = new Date();
+						var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+						document.getElementById("p1").innerHTML = date;
+					</script>
 				    </h2>
 				  </font>
 				</div>
