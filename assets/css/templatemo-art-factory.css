@@ -960,6 +960,24 @@ TRY IT ... with or without CENTER CENTER
     text-transform: capitalize;
 	text-align: center;
 }
+.serviceBox .title3klip{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px 0px 12px -10px;
+    text-transform: capitalize;
+	text-align: center;
+	text-shadow: 5px 1px 30px #FFFFF;
+}
+.title3klip{
+	animation: blinkingText 1.2s infinite;	
+}
+@keyframes blinkingText{
+	0% { color: #D87F00;}
+	49% { color: #FF0004;}
+	60% { color: transparent;}
+	99% {color: transparent;}
+	100% { color: #F8D800;}
+}
 .serviceBox .title4{
     font-size: 15px;
     font-weight: 700;
